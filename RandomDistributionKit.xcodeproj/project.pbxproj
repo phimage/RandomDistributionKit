@@ -1,0 +1,938 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DACDCDAFF30ECB60617AD9C /* Pods_RandomDistributionKitMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E301CDF0FDDCB3DDEAC783C5 /* Pods_RandomDistributionKitMacOS.framework */; };
+		1153F08C600D1D29F32ACD90 /* Pods_RandomDistributionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD67808A33B4A638A1D8A32 /* Pods_RandomDistributionKit.framework */; };
+		398BE5DEDD4D87E152F81DCC /* Pods_RandomDistributionKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B5A44DD8DC4701DD9696B4F /* Pods_RandomDistributionKitTests.framework */; };
+		C423418D1DF6C96D00946F93 /* RandomDistributionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42341831DF6C96D00946F93 /* RandomDistributionKit.framework */; };
+		C42341921DF6C96D00946F93 /* RandomDistributionKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341911DF6C96D00946F93 /* RandomDistributionKitTests.swift */; };
+		C42341941DF6C96D00946F93 /* RandomDistributionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C42341861DF6C96D00946F93 /* RandomDistributionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C42341B41DF6CA3900946F93 /* RandomDistributionKitMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C42341A61DF6CA3900946F93 /* RandomDistributionKitMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C42341C31DF6CBBF00946F93 /* Bool+RandomDistributionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341BC1DF6CBBF00946F93 /* Bool+RandomDistributionKit.swift */; };
+		C42341C41DF6CBBF00946F93 /* Bool+RandomDistributionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341BC1DF6CBBF00946F93 /* Bool+RandomDistributionKit.swift */; };
+		C42341C51DF6CBBF00946F93 /* FloatingPoint+RandomDistributionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341BD1DF6CBBF00946F93 /* FloatingPoint+RandomDistributionKit.swift */; };
+		C42341C61DF6CBBF00946F93 /* FloatingPoint+RandomDistributionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341BD1DF6CBBF00946F93 /* FloatingPoint+RandomDistributionKit.swift */; };
+		C42341C71DF6CBBF00946F93 /* Integer+RandomDistributionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341BE1DF6CBBF00946F93 /* Integer+RandomDistributionKit.swift */; };
+		C42341C81DF6CBBF00946F93 /* Integer+RandomDistributionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341BE1DF6CBBF00946F93 /* Integer+RandomDistributionKit.swift */; };
+		C42341CF1DF6CBBF00946F93 /* RandomDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341C21DF6CBBF00946F93 /* RandomDistribution.swift */; };
+		C42341D01DF6CBBF00946F93 /* RandomDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341C21DF6CBBF00946F93 /* RandomDistribution.swift */; };
+		C42341E61DF6CBFB00946F93 /* RandomDistributionKitTVOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C42341D81DF6CBFA00946F93 /* RandomDistributionKitTVOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C42341EE1DF6CC4E00946F93 /* DistributionMoment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341ED1DF6CC4E00946F93 /* DistributionMoment.swift */; };
+		C42341F61DF6CD5200946F93 /* RandomDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341C21DF6CBBF00946F93 /* RandomDistribution.swift */; };
+		C42341F71DF6CD6F00946F93 /* FloatingPoint+RandomDistributionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341BD1DF6CBBF00946F93 /* FloatingPoint+RandomDistributionKit.swift */; };
+		C42341F81DF6CD7000946F93 /* Bool+RandomDistributionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341BC1DF6CBBF00946F93 /* Bool+RandomDistributionKit.swift */; };
+		C42341F91DF6CD7200946F93 /* Integer+RandomDistributionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341BE1DF6CBBF00946F93 /* Integer+RandomDistributionKit.swift */; };
+		C42341FB1DF6CD9000946F93 /* DiscreteRandomDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341FA1DF6CD9000946F93 /* DiscreteRandomDistribution.swift */; };
+		C42341FC1DF6CD9000946F93 /* DiscreteRandomDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341FA1DF6CD9000946F93 /* DiscreteRandomDistribution.swift */; };
+		C42341FD1DF6CD9000946F93 /* DiscreteRandomDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341FA1DF6CD9000946F93 /* DiscreteRandomDistribution.swift */; };
+		C42341FF1DF6CDBC00946F93 /* Array+RandomDistributionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341FE1DF6CDBC00946F93 /* Array+RandomDistributionKit.swift */; };
+		C42342001DF6CDBC00946F93 /* Array+RandomDistributionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341FE1DF6CDBC00946F93 /* Array+RandomDistributionKit.swift */; };
+		C42342011DF6CDBC00946F93 /* Array+RandomDistributionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42341FE1DF6CDBC00946F93 /* Array+RandomDistributionKit.swift */; };
+		EDA5A7E5F2FDF1F54FAECC98 /* Pods_RandomDistributionKitTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3A94E64E0B5CA9D533639E /* Pods_RandomDistributionKitTVOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C423418E1DF6C96D00946F93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C423417A1DF6C96D00946F93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C42341821DF6C96D00946F93;
+			remoteInfo = RandomDistributionKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3269E95B3A0BABF56C00B6E8 /* Pods-RandomDistributionKitTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomDistributionKitTVOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RandomDistributionKitTVOS/Pods-RandomDistributionKitTVOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4AD67808A33B4A638A1D8A32 /* Pods_RandomDistributionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomDistributionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5241D7D871980C1C18CEFBBB /* Pods-RandomDistributionKitMacOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomDistributionKitMacOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RandomDistributionKitMacOS/Pods-RandomDistributionKitMacOS.release.xcconfig"; sourceTree = "<group>"; };
+		77D39FB3E7C50592192A78AA /* Pods-RandomDistributionKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomDistributionKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RandomDistributionKitTests/Pods-RandomDistributionKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B5A44DD8DC4701DD9696B4F /* Pods_RandomDistributionKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomDistributionKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3A94E64E0B5CA9D533639E /* Pods_RandomDistributionKitTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomDistributionKitTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF17145133A971B75C0BD6EC /* Pods-RandomDistributionKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomDistributionKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RandomDistributionKitTests/Pods-RandomDistributionKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		BEB750E24C97F383FABF890B /* Pods-RandomDistributionKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomDistributionKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-RandomDistributionKit/Pods-RandomDistributionKit.release.xcconfig"; sourceTree = "<group>"; };
+		C31C9097AD400490A561BB14 /* Pods-RandomDistributionKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomDistributionKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RandomDistributionKit/Pods-RandomDistributionKit.debug.xcconfig"; sourceTree = "<group>"; };
+		C42341831DF6C96D00946F93 /* RandomDistributionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomDistributionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42341861DF6C96D00946F93 /* RandomDistributionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomDistributionKit.h; sourceTree = "<group>"; };
+		C42341871DF6C96D00946F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C423418C1DF6C96D00946F93 /* RandomDistributionKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomDistributionKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42341911DF6C96D00946F93 /* RandomDistributionKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDistributionKitTests.swift; sourceTree = "<group>"; };
+		C42341931DF6C96D00946F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C42341A41DF6CA3900946F93 /* RandomDistributionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomDistributionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42341A61DF6CA3900946F93 /* RandomDistributionKitMacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomDistributionKitMacOS.h; sourceTree = "<group>"; };
+		C42341A71DF6CA3900946F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C42341BC1DF6CBBF00946F93 /* Bool+RandomDistributionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+RandomDistributionKit.swift"; sourceTree = "<group>"; };
+		C42341BD1DF6CBBF00946F93 /* FloatingPoint+RandomDistributionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+RandomDistributionKit.swift"; sourceTree = "<group>"; };
+		C42341BE1DF6CBBF00946F93 /* Integer+RandomDistributionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Integer+RandomDistributionKit.swift"; sourceTree = "<group>"; };
+		C42341C21DF6CBBF00946F93 /* RandomDistribution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomDistribution.swift; sourceTree = "<group>"; };
+		C42341D61DF6CBFA00946F93 /* RandomDistributionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomDistributionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42341D81DF6CBFA00946F93 /* RandomDistributionKitTVOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomDistributionKitTVOS.h; sourceTree = "<group>"; };
+		C42341D91DF6CBFA00946F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C42341ED1DF6CC4E00946F93 /* DistributionMoment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistributionMoment.swift; sourceTree = "<group>"; };
+		C42341FA1DF6CD9000946F93 /* DiscreteRandomDistribution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscreteRandomDistribution.swift; sourceTree = "<group>"; };
+		C42341FE1DF6CDBC00946F93 /* Array+RandomDistributionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+RandomDistributionKit.swift"; sourceTree = "<group>"; };
+		DE465B5FAC955B426F76EC14 /* Pods-RandomDistributionKitMacOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomDistributionKitMacOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RandomDistributionKitMacOS/Pods-RandomDistributionKitMacOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E301CDF0FDDCB3DDEAC783C5 /* Pods_RandomDistributionKitMacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomDistributionKitMacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE59089DB7154C852728A45 /* Pods-RandomDistributionKitTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomDistributionKitTVOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RandomDistributionKitTVOS/Pods-RandomDistributionKitTVOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C423417F1DF6C96D00946F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1153F08C600D1D29F32ACD90 /* Pods_RandomDistributionKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42341891DF6C96D00946F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C423418D1DF6C96D00946F93 /* RandomDistributionKit.framework in Frameworks */,
+				398BE5DEDD4D87E152F81DCC /* Pods_RandomDistributionKitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42341A01DF6CA3900946F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DACDCDAFF30ECB60617AD9C /* Pods_RandomDistributionKitMacOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42341D21DF6CBFA00946F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDA5A7E5F2FDF1F54FAECC98 /* Pods_RandomDistributionKitTVOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21EE3A7E6EBEBC656A5F01FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C31C9097AD400490A561BB14 /* Pods-RandomDistributionKit.debug.xcconfig */,
+				BEB750E24C97F383FABF890B /* Pods-RandomDistributionKit.release.xcconfig */,
+				DE465B5FAC955B426F76EC14 /* Pods-RandomDistributionKitMacOS.debug.xcconfig */,
+				5241D7D871980C1C18CEFBBB /* Pods-RandomDistributionKitMacOS.release.xcconfig */,
+				3269E95B3A0BABF56C00B6E8 /* Pods-RandomDistributionKitTVOS.debug.xcconfig */,
+				FFE59089DB7154C852728A45 /* Pods-RandomDistributionKitTVOS.release.xcconfig */,
+				77D39FB3E7C50592192A78AA /* Pods-RandomDistributionKitTests.debug.xcconfig */,
+				AF17145133A971B75C0BD6EC /* Pods-RandomDistributionKitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		370F71AAE7A4B71BB5F1E472 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AD67808A33B4A638A1D8A32 /* Pods_RandomDistributionKit.framework */,
+				E301CDF0FDDCB3DDEAC783C5 /* Pods_RandomDistributionKitMacOS.framework */,
+				AB3A94E64E0B5CA9D533639E /* Pods_RandomDistributionKitTVOS.framework */,
+				9B5A44DD8DC4701DD9696B4F /* Pods_RandomDistributionKitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C42341791DF6C96D00946F93 = {
+			isa = PBXGroup;
+			children = (
+				C423419E1DF6C9B400946F93 /* Sources */,
+				C423419D1DF6C99000946F93 /* Xcodes */,
+				C42341901DF6C96D00946F93 /* Tests */,
+				C42341841DF6C96D00946F93 /* Products */,
+				21EE3A7E6EBEBC656A5F01FC /* Pods */,
+				370F71AAE7A4B71BB5F1E472 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C42341841DF6C96D00946F93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C42341831DF6C96D00946F93 /* RandomDistributionKit.framework */,
+				C423418C1DF6C96D00946F93 /* RandomDistributionKitTests.xctest */,
+				C42341A41DF6CA3900946F93 /* RandomDistributionKit.framework */,
+				C42341D61DF6CBFA00946F93 /* RandomDistributionKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C42341851DF6C96D00946F93 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C42341861DF6C96D00946F93 /* RandomDistributionKit.h */,
+				C42341871DF6C96D00946F93 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		C42341901DF6C96D00946F93 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C42341ED1DF6CC4E00946F93 /* DistributionMoment.swift */,
+				C42341911DF6C96D00946F93 /* RandomDistributionKitTests.swift */,
+				C42341931DF6C96D00946F93 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		C423419D1DF6C99000946F93 /* Xcodes */ = {
+			isa = PBXGroup;
+			children = (
+				C42341D71DF6CBFA00946F93 /* tvOS */,
+				C42341A51DF6CA3900946F93 /* macOS */,
+				C42341851DF6C96D00946F93 /* iOS */,
+			);
+			path = Xcodes;
+			sourceTree = "<group>";
+		};
+		C423419E1DF6C9B400946F93 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C42341BB1DF6CBBF00946F93 /* Extensions */,
+				C42341C21DF6CBBF00946F93 /* RandomDistribution.swift */,
+				C42341FA1DF6CD9000946F93 /* DiscreteRandomDistribution.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C42341A51DF6CA3900946F93 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				C42341A61DF6CA3900946F93 /* RandomDistributionKitMacOS.h */,
+				C42341A71DF6CA3900946F93 /* Info.plist */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		C42341BB1DF6CBBF00946F93 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C42341BC1DF6CBBF00946F93 /* Bool+RandomDistributionKit.swift */,
+				C42341BD1DF6CBBF00946F93 /* FloatingPoint+RandomDistributionKit.swift */,
+				C42341BE1DF6CBBF00946F93 /* Integer+RandomDistributionKit.swift */,
+				C42341FE1DF6CDBC00946F93 /* Array+RandomDistributionKit.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C42341D71DF6CBFA00946F93 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				C42341D81DF6CBFA00946F93 /* RandomDistributionKitTVOS.h */,
+				C42341D91DF6CBFA00946F93 /* Info.plist */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C42341801DF6C96D00946F93 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42341941DF6C96D00946F93 /* RandomDistributionKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42341A11DF6CA3900946F93 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42341B41DF6CA3900946F93 /* RandomDistributionKitMacOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42341D31DF6CBFA00946F93 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42341E61DF6CBFB00946F93 /* RandomDistributionKitTVOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C42341821DF6C96D00946F93 /* RandomDistributionKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42341971DF6C96D00946F93 /* Build configuration list for PBXNativeTarget "RandomDistributionKit" */;
+			buildPhases = (
+				269A197D5BCED3C95E74919A /* [CP] Check Pods Manifest.lock */,
+				C423417E1DF6C96D00946F93 /* Sources */,
+				C423417F1DF6C96D00946F93 /* Frameworks */,
+				C42341801DF6C96D00946F93 /* Headers */,
+				C42341811DF6C96D00946F93 /* Resources */,
+				D21479433E6DEA53D836A6FA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandomDistributionKit;
+			productName = RandomDistributionKit;
+			productReference = C42341831DF6C96D00946F93 /* RandomDistributionKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C423418B1DF6C96D00946F93 /* RandomDistributionKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C423419A1DF6C96D00946F93 /* Build configuration list for PBXNativeTarget "RandomDistributionKitTests" */;
+			buildPhases = (
+				964F96D237B87BD2E83FEB3F /* [CP] Check Pods Manifest.lock */,
+				C42341881DF6C96D00946F93 /* Sources */,
+				C42341891DF6C96D00946F93 /* Frameworks */,
+				C423418A1DF6C96D00946F93 /* Resources */,
+				B50023B11FEF4BA054AA768B /* [CP] Embed Pods Frameworks */,
+				B743229B6580A739ED316700 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C423418F1DF6C96D00946F93 /* PBXTargetDependency */,
+			);
+			name = RandomDistributionKitTests;
+			productName = RandomDistributionKitTests;
+			productReference = C423418C1DF6C96D00946F93 /* RandomDistributionKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C42341A31DF6CA3900946F93 /* RandomDistributionKitMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42341B51DF6CA3900946F93 /* Build configuration list for PBXNativeTarget "RandomDistributionKitMacOS" */;
+			buildPhases = (
+				8B793A2F67ADECFF4FDA60BA /* [CP] Check Pods Manifest.lock */,
+				C423419F1DF6CA3900946F93 /* Sources */,
+				C42341A01DF6CA3900946F93 /* Frameworks */,
+				C42341A11DF6CA3900946F93 /* Headers */,
+				C42341A21DF6CA3900946F93 /* Resources */,
+				D7E5877738E5AEDF2FCD6107 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandomDistributionKitMacOS;
+			productName = RandomDistributionKitMacOS;
+			productReference = C42341A41DF6CA3900946F93 /* RandomDistributionKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C42341D51DF6CBFA00946F93 /* RandomDistributionKitTVOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42341E71DF6CBFB00946F93 /* Build configuration list for PBXNativeTarget "RandomDistributionKitTVOS" */;
+			buildPhases = (
+				6F4CBE214E7390E1A8F89027 /* [CP] Check Pods Manifest.lock */,
+				C42341D11DF6CBFA00946F93 /* Sources */,
+				C42341D21DF6CBFA00946F93 /* Frameworks */,
+				C42341D31DF6CBFA00946F93 /* Headers */,
+				C42341D41DF6CBFA00946F93 /* Resources */,
+				38C65129B51BB3BF14E02E30 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandomDistributionKitTVOS;
+			productName = RandomDistributionKitTVOS;
+			productReference = C42341D61DF6CBFA00946F93 /* RandomDistributionKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C423417A1DF6C96D00946F93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = phimage;
+				TargetAttributes = {
+					C42341821DF6C96D00946F93 = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					C423418B1DF6C96D00946F93 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					C42341A31DF6CA3900946F93 = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					C42341D51DF6CBFA00946F93 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C423417D1DF6C96D00946F93 /* Build configuration list for PBXProject "RandomDistributionKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C42341791DF6C96D00946F93;
+			productRefGroup = C42341841DF6C96D00946F93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C42341821DF6C96D00946F93 /* RandomDistributionKit */,
+				C423418B1DF6C96D00946F93 /* RandomDistributionKitTests */,
+				C42341A31DF6CA3900946F93 /* RandomDistributionKitMacOS */,
+				C42341D51DF6CBFA00946F93 /* RandomDistributionKitTVOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C42341811DF6C96D00946F93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C423418A1DF6C96D00946F93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42341A21DF6CA3900946F93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42341D41DF6CBFA00946F93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		269A197D5BCED3C95E74919A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		38C65129B51BB3BF14E02E30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RandomDistributionKitTVOS/Pods-RandomDistributionKitTVOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F4CBE214E7390E1A8F89027 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B793A2F67ADECFF4FDA60BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		964F96D237B87BD2E83FEB3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B50023B11FEF4BA054AA768B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RandomDistributionKitTests/Pods-RandomDistributionKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B743229B6580A739ED316700 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RandomDistributionKitTests/Pods-RandomDistributionKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D21479433E6DEA53D836A6FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RandomDistributionKit/Pods-RandomDistributionKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7E5877738E5AEDF2FCD6107 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RandomDistributionKitMacOS/Pods-RandomDistributionKitMacOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C423417E1DF6C96D00946F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42341C51DF6CBBF00946F93 /* FloatingPoint+RandomDistributionKit.swift in Sources */,
+				C42341FF1DF6CDBC00946F93 /* Array+RandomDistributionKit.swift in Sources */,
+				C42341C31DF6CBBF00946F93 /* Bool+RandomDistributionKit.swift in Sources */,
+				C42341FB1DF6CD9000946F93 /* DiscreteRandomDistribution.swift in Sources */,
+				C42341C71DF6CBBF00946F93 /* Integer+RandomDistributionKit.swift in Sources */,
+				C42341CF1DF6CBBF00946F93 /* RandomDistribution.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42341881DF6C96D00946F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42341921DF6C96D00946F93 /* RandomDistributionKitTests.swift in Sources */,
+				C42341EE1DF6CC4E00946F93 /* DistributionMoment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C423419F1DF6CA3900946F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42341C61DF6CBBF00946F93 /* FloatingPoint+RandomDistributionKit.swift in Sources */,
+				C42342001DF6CDBC00946F93 /* Array+RandomDistributionKit.swift in Sources */,
+				C42341C41DF6CBBF00946F93 /* Bool+RandomDistributionKit.swift in Sources */,
+				C42341FC1DF6CD9000946F93 /* DiscreteRandomDistribution.swift in Sources */,
+				C42341C81DF6CBBF00946F93 /* Integer+RandomDistributionKit.swift in Sources */,
+				C42341D01DF6CBBF00946F93 /* RandomDistribution.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42341D11DF6CBFA00946F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42341F91DF6CD7200946F93 /* Integer+RandomDistributionKit.swift in Sources */,
+				C42342011DF6CDBC00946F93 /* Array+RandomDistributionKit.swift in Sources */,
+				C42341F71DF6CD6F00946F93 /* FloatingPoint+RandomDistributionKit.swift in Sources */,
+				C42341FD1DF6CD9000946F93 /* DiscreteRandomDistribution.swift in Sources */,
+				C42341F61DF6CD5200946F93 /* RandomDistribution.swift in Sources */,
+				C42341F81DF6CD7000946F93 /* Bool+RandomDistributionKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C423418F1DF6C96D00946F93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C42341821DF6C96D00946F93 /* RandomDistributionKit */;
+			targetProxy = C423418E1DF6C96D00946F93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C42341951DF6C96D00946F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C42341961DF6C96D00946F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C42341981DF6C96D00946F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C31C9097AD400490A561BB14 /* Pods-RandomDistributionKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Xcodes/iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.phimage.RandomDistributionKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C42341991DF6C96D00946F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB750E24C97F383FABF890B /* Pods-RandomDistributionKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Xcodes/iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.phimage.RandomDistributionKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C423419B1DF6C96D00946F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D39FB3E7C50592192A78AA /* Pods-RandomDistributionKitTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.phimage.RandomDistributionKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C423419C1DF6C96D00946F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF17145133A971B75C0BD6EC /* Pods-RandomDistributionKitTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.phimage.RandomDistributionKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C42341B61DF6CA3900946F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE465B5FAC955B426F76EC14 /* Pods-RandomDistributionKitMacOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Xcodes/macOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = me.phimage.RandomDistributionKitMacOS;
+				PRODUCT_NAME = RandomDistributionKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C42341B71DF6CA3900946F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5241D7D871980C1C18CEFBBB /* Pods-RandomDistributionKitMacOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Xcodes/macOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = me.phimage.RandomDistributionKitMacOS;
+				PRODUCT_NAME = RandomDistributionKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C42341E81DF6CBFB00946F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3269E95B3A0BABF56C00B6E8 /* Pods-RandomDistributionKitTVOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Xcodes/tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.phimage.RandomDistributionKitTVOS;
+				PRODUCT_NAME = RandomDistributionKit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		C42341E91DF6CBFB00946F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFE59089DB7154C852728A45 /* Pods-RandomDistributionKitTVOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Xcodes/tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.phimage.RandomDistributionKitTVOS;
+				PRODUCT_NAME = RandomDistributionKit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C423417D1DF6C96D00946F93 /* Build configuration list for PBXProject "RandomDistributionKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42341951DF6C96D00946F93 /* Debug */,
+				C42341961DF6C96D00946F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42341971DF6C96D00946F93 /* Build configuration list for PBXNativeTarget "RandomDistributionKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42341981DF6C96D00946F93 /* Debug */,
+				C42341991DF6C96D00946F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C423419A1DF6C96D00946F93 /* Build configuration list for PBXNativeTarget "RandomDistributionKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C423419B1DF6C96D00946F93 /* Debug */,
+				C423419C1DF6C96D00946F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42341B51DF6CA3900946F93 /* Build configuration list for PBXNativeTarget "RandomDistributionKitMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42341B61DF6CA3900946F93 /* Debug */,
+				C42341B71DF6CA3900946F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42341E71DF6CBFB00946F93 /* Build configuration list for PBXNativeTarget "RandomDistributionKitTVOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42341E81DF6CBFB00946F93 /* Debug */,
+				C42341E91DF6CBFB00946F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C423417A1DF6C96D00946F93 /* Project object */;
+}
