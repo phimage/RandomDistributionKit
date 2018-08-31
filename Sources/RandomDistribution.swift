@@ -92,7 +92,7 @@ extension RandomDistribuable {
         case .pareto(let scale, let shape):
             return randomPareto(scale: scale, shape: shape, using: randomGenerator)
         case .weibull(let scale,let  shape):
-            return randomPareto(scale: scale, shape: shape, using: randomGenerator)
+            return randomWeibull(scale: scale, shape: shape, using: randomGenerator)
         case .gaussian(let mean, let standardDeviation):
             return randomGaussian(mean: mean, standardDeviation: standardDeviation, using: randomGenerator)
         case .logNormal(let mean, let standardDeviation):
